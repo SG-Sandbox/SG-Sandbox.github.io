@@ -5,12 +5,83 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>EchoBot | About</title>
     <link rel="stylesheet" href="assets/css/style.css">
+    <!-- Temporary styles specific to the about page. -->
+    <style>
+    header {
+      padding: 2rem;
+      text-align: center;
+    }
+
+    section {
+      padding: 2rem;
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    h2 {
+        margin-bottom: 1rem;
+        text-align: center;
+    }
+
+    .team {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        gap: 2rem;
+    }
+
+    .member {
+        padding: 1rem;
+        border-radius: 8px;
+        box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        text-align: center;
+    }
+
+    .member img {
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        object-fit: cover;
+        margin-bottom: 1rem;
+        border: 1px solid white;
+    }
+    </style>
 </head>
 <body>
     <div id="navbar-container"></div>
-    <main>
-        <h1>About</h1>
-    </main>
+    <header>
+        <h1>About the Company</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+    </header>
+    <section>
+        <h2>Meet the Team</h2>
+        <div class="team">
+            <div class="member">
+                <img src="https://via.placeholder.com/100" alt="Team Member 1" />
+                <h3>Team Member 1</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            </div>
+            <div class="member">
+                <img src="https://via.placeholder.com/100" alt="Team Member 2" />
+                <h3>Team Member 2</h3>
+                <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.</p>
+            </div>
+            <div class="member">
+                <img src="https://via.placeholder.com/100" alt="Team Member 2" />
+                <h3>Team Member 3</h3>
+                <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.</p>
+            </div>
+            <div class="member">
+                <img src="https://via.placeholder.com/100" alt="Team Member 2" />
+                <h3>Team Member 4</h3>
+                <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.</p>
+            </div>
+            <div class="member">
+                <img src="https://via.placeholder.com/100" alt="Team Member 2" />
+                <h3>Team Member 5</h3>
+                <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.</p>
+            </div>
+        </div>
+    </section>
     <div id="footer-container"></div>
     <script src="assets/js/script.js"></script>
 </body>

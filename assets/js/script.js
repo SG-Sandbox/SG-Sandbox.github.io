@@ -25,6 +25,6 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   };
 
-  loadComponent('components/_navbar.html', 'navbar-container', initializeHamburger);
-  loadComponent('components/_footer.html', 'footer-container');
+  loadComponent('components/navbar.html', 'navbar-container', initializeHamburger);
+  loadComponent('components/footer.html', 'footer-container');
 });

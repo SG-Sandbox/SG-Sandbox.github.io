@@ -12,6 +12,7 @@ body {
     margin: 0;
     background-color: var(--primary-color);
     color: var(--text-color);
+    overflow-x: hidden; /* Temporary fix to excess width issue */
 }
 
 .navbar {

@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+:root {
+    --primary-color: #2c3e50;
+    --secondary-color: #34495e;
+    --accent-color: #3498db; /* main CTA color */
+    --accent-hover: #2980b9; /* hover version of accent */
+    --text-color: #ecf0f1; /* light text on dark bg */
+    --muted-text-color: #bdc3c7; /* for secondary text */
+    --background-color: #1c2833; /* page background */
+    --surface-color: #22313f; /* card or panel bg */
+    --success-color: #2ecc71;
+    --warning-color: #f1c40f;
+    --error-color: #e74c3c;
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+    background-color: var(--primary-color);
+}
+
+p, h1, h2, h3, h4 {
+    color: var(--text-color);
+}
+
+p {
+    font-size: 1rem;
+    margin: 0 0 1em;
+}
+
+a {
+    color: var(--text-color);
+    text-decoration: none;
+    transition: color 0.2s ease;
+}
+
+a:hover,
+a:focus {
+    text-decoration: underline;
+}
+
+h1, h2, h3, h4 {
+    font-weight: 700;
+    line-height: 1.2;
+    margin: 1.5em 0 0.5em;
+}
+
+h1 {
+  font-size: 2.5rem;
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+h3 {
+  font-size: 1.5rem;
+}
+
+h4 {
+  font-size: 1.2rem;
+}
+
+button {
+    color: var(--text-color);
+    background-color: var(--accent-color);
+    border: none;
+    border-radius: 4px;
+    padding: 0.6em 1.2em;
+    cursor: pointer;
+}
+
+button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+button:active {
+    transform: scale(0.98);
+    background-color: var(--hover-color);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+

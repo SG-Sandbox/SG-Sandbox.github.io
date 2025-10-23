@@ -3,87 +3,44 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>EchoBot | About</title>
-    <link rel="stylesheet" href="assets/css/style.css">
-    <!-- Temporary styles specific to the about page. -->
-    <style>
-    .team {
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        gap: 24px;
-        padding: 40px;
-    }
-
-    @media (max-width: 900px) {
-    .team {
-        grid-template-columns: repeat(2, 1fr);
-    }
-    }
-
-    @media (max-width: 600px) {
-    .team {
-        grid-template-columns: 1fr;
-    }
-    }
-
-    .member {
-    background: var(--secondary-color);
-    border-radius: 8px;
-    padding: 20px;
-    text-align: center;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-    }
-
-    .member img {
-    width: 100%;
-    aspect-ratio: 4 / 5;
-    object-fit: cover;
-    border-radius: 8px;
-    margin-bottom: 15px;
-    }
-    </style>
+    <title>EchoBot &ndash; About</title>
+    <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="stylesheet" href="assets/css/layout.css">
+    <link rel="stylesheet" href="assets/css/sections.css">
 </head>
 <body>
     <div id="navbar-container"></div>
-    <header>
-        <h1>About the Company</h1>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-    </header>
-    <main>
-        <h2>Meet the Team</h2>
-        <div class="team">
+    <section class="about">
+        <h2>About the Company</h2>
+        <h3>Meet the Team</h3>
+        <section class="team">
             <div class="member">
                 <img src="assets/images/about/portrait_1.png" alt="Image of Team Member 1" />
                 <h3>Team Member 1</h3>
                 <h4>Role</h4>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
             </div>
             <div class="member">
                 <img src="assets/images/about/portrait_2.png" alt="Image of Team Member 2" />
                 <h3>Team Member 2</h3>
                 <h4>Role</h4>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
             </div>
             <div class="member">
                 <img src="assets/images/about/portrait_3.png" alt="Image of Team Member 3" />
                 <h3>Team Member 3</h3>
                 <h4>Role</h4>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
             </div>
             <div class="member">
                 <img src="assets/images/about/portrait_4.png" alt="Image of Team Member 4" />
                 <h3>Team Member 4</h3>
                 <h4>Role</h4>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
             </div>
             <div class="member">
                 <img src="assets/images/about/portrait_5.png" alt="Image of Team Member 5" />
                 <h3>Team Member 5</h3>
                 <h4>Role</h4>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
             </div>
-        </div>
-    </main>
+        </section>
+    </section>
     <div id="footer-container"></div>
     <script src="assets/js/script.js"></script>
 </body>

@@ -67,6 +67,13 @@ body {
 
 main {
     padding: 1rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+header, h2 {
+    text-align: center;
+    margin: 0 auto;
 }
 
 .hero {

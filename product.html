@@ -1,34 +1,64 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>EchoBot | Product</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>How EchoBot Works</title>
     <link rel="stylesheet" href="assets/css/style.css">
-    <style>
-        img {
-            width: 800px;
-            height: auto;
-        }
-    </style>
+  <style>
+.card-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
+  padding: 40px;
+}
+
+.card {
+    background-color: var(--secondary-color);
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  transition: transform 0.2s ease;
+}
+
+.card:hover {
+  transform: scale(1.03);
+}
+
+.card h3 {
+  margin-top: 0;
+}
+  </style>
 </head>
 <body>
-    <div id="navbar-container"></div>
-    <main>
-        <h1>Product</h1>
-        <ol>
-            <li>Coaxing Phrase</li>
-            <li>“Are you ready for your bath?”</li>
-            <li>Noticeable language barrier</li>
-            <li>Press “ON” button on EchoBot</li>
-            <li>Say phrase into robot</li>
-            <li>The speech recognition system will recognize an audio input and convert it to text</li>
-            <li>Our customized code will identify the language of input text. This utilizes Natural Language Processing (NLP) to translate the text from source language to target language</li>
-            <li>Once translation is obtained, EchoBot uses text-to-speech (TTS) technology to convert the translated text back to spoken words</li> 
-            <li>Translated speech is then outspoken through the robot’s speakers</li>
-        </ol>
-        <img src="assets/images/flowgraph.png" alt="Flow chart showing how the robot works" />
-    </main>
+        <div id="navbar-container"></div>
+
+<div class="card-container">
+  <div class="card">
+    <h3>Step 1: Activate EchoBot</h3>
+    <p>Press the “ON” button to begin the process.</p>
+  </div>
+  <div class="card">
+    <h3>Step 2: Speak the Phrase</h3>
+    <p>Say the coaxing phrase into EchoBot’s microphone. Example: “Are you ready for your bath?”</p>
+  </div>
+  <div class="card">
+    <h3>Step 3: Speech Recognition</h3>
+    <p>EchoBot converts your spoken phrase into text using its built-in recognition system.</p>
+  </div>
+  <div class="card">
+    <h3>Step 4: Language Detection & Translation</h3>
+    <p>Our NLP code identifies the language and translates it to the target language.</p>
+  </div>
+  <div class="card">
+    <h3>Step 5: Text-to-Speech</h3>
+    <p>The translated text is converted back into spoken words using TTS technology.</p>
+  </div>
+  <div class="card">
+    <h3>Step 6: Output</h3>
+    <p>EchoBot speaks the translated phrase aloud through its speakers.</p>
+  </div>
+</div>
     <div id="footer-container"></div>
     <script src="assets/js/script.js"></script>
 </body>

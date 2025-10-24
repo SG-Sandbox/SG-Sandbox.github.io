@@ -1,28 +1,44 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
 
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
 :root {
-    --primary-color: #007bff;
-    --secondary-color: #6c757d;
-    --text-color: #333;
-    --background-color: #fff;
-    --light-gray: #f2f2f2;
-    --medium-gray: #e6e6e6;
-    --dark-gray: #333;
-    --white: #fff;
-    --border-color: #ccc;
+    --primary-color: #2c3e50;
+    --secondary-color: #34495e;
+    --accent-color: #3498db;
+    --accent-hover: #2980b9;
+    --text-color: #ecf0f1;
+    --muted-text-color: #bdc3c7;
+    --background-color: #1c2833;
+    --surface-color: #22313f;
+    --success-color: #2ecc71;
+    --warning-color: #f1c40f;
+    --error-color: #e74c3c;
 }
 
 body {
-    font-family: 'Lato', sans-serif;
-    margin: 0;
     padding: 0;
-    background-color: var(--background-color);
     color: var(--text-color);
+    font-family: 'Lato', sans-serif;
+    background-color: var(--background-color);
 }
 
-header {
+.cta {
+    text-align: center;
     background-color: var(--light-gray);
-    padding: 1em;
+    padding: 2em;
+}
+
+.button {
+    display: inline-block;
+    padding: 0.8em 1.2em;
+    background-color: var(--dark-gray);
+    color: var(--white);
+    text-decoration: none;
+    border-radius: 5px;
 }
 
 nav {
@@ -69,6 +85,14 @@ nav a {
     background-color: var(--text-color);
     transition: all 0.3s ease-in-out;
 }
+
+footer {
+    text-align: center;
+    padding: 1em;
+    background-color: var(--light-gray);
+}
+
+/* Home Page (index.html) */
 
 .hero {
     text-align: center;
@@ -131,20 +155,7 @@ nav a {
     transition-delay: 400ms;
 }
 
-.cta {
-    text-align: center;
-    background-color: var(--light-gray);
-    padding: 2em;
-}
-
-.button {
-    display: inline-block;
-    padding: 0.8em 1.2em;
-    background-color: var(--dark-gray);
-    color: var(--white);
-    text-decoration: none;
-    border-radius: 5px;
-}
+/* About Page (about.html) */
 
 .about-company, .team, .contact-form {
     max-width: 960px;
@@ -190,6 +201,12 @@ nav a {
     border-radius: 5px;
 }
 
+/* Products Page (products.html) */
+
+/* Events Page (events.html) */
+
+/* Contact Page (content.html) */
+
 form {
     display: flex;
     flex-direction: column;
@@ -206,11 +223,7 @@ input, textarea {
     border-radius: 3px;
 }
 
-footer {
-    text-align: center;
-    padding: 1em;
-    background-color: var(--light-gray);
-}
+
 
 @media (max-width: 768px) {
     .nav-links {
@@ -259,5 +272,64 @@ footer {
 
     .team-member.phantom {
         display: none;
+    }
+}
+
+.contact-form {
+    max-width: 600px;
+    margin: auto;
+    background: #fff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.contact-form h2 {
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: #333;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    color: #555;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+.form-group textarea {
+    resize: vertical;
+    height: 120px;
+}
+
+.form-group button {
+    background: #007BFF;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.form-group button:hover {
+    background: #0056b3;
+}
+
+@media (max-width: 600px) {
+    .contact-form {
+        padding: 20px;
     }
 }

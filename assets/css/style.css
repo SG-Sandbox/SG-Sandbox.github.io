@@ -1,0 +1,263 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
+
+:root {
+    --primary-color: #007bff;
+    --secondary-color: #6c757d;
+    --text-color: #333;
+    --background-color: #fff;
+    --light-gray: #f2f2f2;
+    --medium-gray: #e6e6e6;
+    --dark-gray: #333;
+    --white: #fff;
+    --border-color: #ccc;
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: var(--background-color);
+    color: var(--text-color);
+}
+
+header {
+    background-color: var(--light-gray);
+    padding: 1em;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo a {
+    font-weight: bold;
+    font-size: 1.5em;
+    text-decoration: none;
+    color: var(--text-color);
+}
+
+.nav-links {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.nav-links li {
+    margin: 0 1em;
+}
+
+nav a {
+    text-decoration: none;
+    color: var(--text-color);
+}
+
+.hamburger {
+    display: none;
+    cursor: pointer;
+    background: none;
+    border: none;
+}
+
+.hamburger span {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px;
+    background-color: var(--text-color);
+    transition: all 0.3s ease-in-out;
+}
+
+.hero {
+    text-align: center;
+    padding: 4em 2em;
+    background-color: var(--medium-gray);
+}
+
+.info {
+    padding: 2em;
+}
+
+.info-mission {
+    max-width: 960px;
+    margin: 0 auto 2em auto;
+    text-align: center;
+}
+
+.info-cards {
+    text-align: center;
+    padding: 2em;
+}
+
+.card-container {
+    display: flex;
+    justify-content: center;
+    gap: 2em;
+    margin-top: 2em;
+}
+
+.card {
+    border: 1px solid var(--border-color);
+    border-radius: 5px;
+    padding: 1em;
+    max-width: 300px;
+}
+
+.card img {
+    max-width: 100%;
+    border-radius: 5px;
+}
+
+/*.hidden {
+    opacity: 0;
+    filter: blur(5px);
+    transform: translateX(-100%);
+    transition: all 1s;
+}*/
+
+.show {
+    opacity: 1;
+    filter: blur(0);
+    transform: translateX(0);
+}
+
+.card:nth-child(2) {
+    transition-delay: 200ms;
+}
+
+.card:nth-child(3) {
+    transition-delay: 400ms;
+}
+
+.cta {
+    text-align: center;
+    background-color: var(--light-gray);
+    padding: 2em;
+}
+
+.button {
+    display: inline-block;
+    padding: 0.8em 1.2em;
+    background-color: var(--dark-gray);
+    color: var(--white);
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.about-company, .team, .contact-form {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 2em;
+}
+
+.team-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 2em;
+}
+
+.team-member {
+    border: 1px solid var(--border-color);
+    border-radius: 5px;
+    padding: 1em;
+    flex: 0 1 32%;
+    box-sizing: border-box;
+    margin-bottom: 1.5em;
+}
+
+.team-member.phantom {
+    visibility: hidden;
+    border: none;
+}
+
+.team-member h3 {
+    margin-bottom: 0.25em;
+}
+
+.team-member .role {
+    color: var(--secondary-color);
+    font-style: italic;
+    margin-top: 0;
+    margin-bottom: 1em;
+}
+
+.team-member img {
+    width: 100%;
+    margin-bottom: 1em;
+    border-radius: 5px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-bottom: 0.5em;
+}
+
+input, textarea {
+    padding: 0.5em;
+    margin-bottom: 1em;
+    border: 1px solid var(--border-color);
+    border-radius: 3px;
+}
+
+footer {
+    text-align: center;
+    padding: 1em;
+    background-color: var(--light-gray);
+}
+
+@media (max-width: 768px) {
+    .nav-links {
+        display: none;
+        position: absolute;
+        right: 0;
+        top: 60px;
+        background-color: var(--light-gray);
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .nav-links.nav-active {
+        display: flex;
+    }
+
+    .nav-links li {
+        margin: 1em 0;
+    }
+
+    .hamburger {
+        display: block;
+    }
+
+    .hamburger.is-active span:nth-child(1) {
+        transform: rotate(45deg) translate(5px, 5px);
+    }
+
+    .hamburger.is-active span:nth-child(2) {
+        opacity: 0;
+    }
+
+    .hamburger.is-active span:nth-child(3) {
+        transform: rotate(-45deg) translate(7px, -6px);
+    }
+
+    .card-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .team-member {
+        flex-basis: 100%;
+    }
+
+    .team-member.phantom {
+        display: none;
+    }
+}

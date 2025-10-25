@@ -96,8 +96,8 @@ main {
 }
 
 .card-container {
-    display: flex;
-    justify-content: center;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
     gap: 2em;
     margin-top: 2em;
 }
@@ -107,10 +107,15 @@ main {
     border-radius: 5px;
     padding: 1em;
     max-width: 300px;
+    display: flex;
+    flex-direction: column;
 }
 
 .card img {
     max-width: 100%;
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    object-fit: cover;
     border-radius: 5px;
 }
 
@@ -150,7 +155,7 @@ main {
     border-radius: 5px;
 }
 
-.about-company, .team, .contact-form {
+.about-company, .team, .contact-form, .events, .products {
     max-width: 960px;
     margin: 0 auto;
     padding: 2em;
@@ -170,6 +175,9 @@ main {
     flex: 0 1 32%;
     box-sizing: border-box;
     margin-bottom: 1.5em;
+    display: flex;
+    flex-direction: column;
+    max-width: 300px;
 }
 
 .team-member.phantom {
@@ -190,6 +198,8 @@ main {
 
 .team-member img {
     width: 100%;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
     margin-bottom: 1em;
     border-radius: 5px;
 }
@@ -253,8 +263,12 @@ footer {
     }
 
     .card-container {
-        flex-direction: column;
-        align-items: center;
+        grid-template-columns: 1fr;
+        justify-items: center;
+    }
+
+    .team-container {
+        justify-content: center;
     }
 
     .team-member {

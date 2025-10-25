@@ -1,15 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
 
 :root {
-    --primary-color: #007bff;
-    --secondary-color: #6c757d;
-    --text-color: #333;
-    --background-color: #fff;
-    --light-gray: #f2f2f2;
-    --medium-gray: #e6e6e6;
-    --dark-gray: #333;
-    --white: #fff;
-    --border-color: #ccc;
+    --primary-color: #3b82f6;         /* Vivid blue for interactive elements */
+    --secondary-color: #60a5fa;       /* Softer blue for hover states and accents */
+    --text-color: #e2e8f0;            /* Light gray-blue for high readability */
+    --background-color: #1e293b;      /* Deep navy for page background */
+    --light-gray: #273549;            /* Slightly lighter for cards and containers */
+    --medium-gray: #334155;           /* Mid-tone for borders and subtle accents */
+    --dark-gray: #1e293b;             /* Matches background for consistency */
+    --white: #f8fafc;                 /* Off-white for text and highlights */
+    --border-color: #3b4d63;          /* Muted slate-blue for clean separation */
 }
 
 body {
